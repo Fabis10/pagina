@@ -1,0 +1,532 @@
+/*
+#ffeeee #fdd1dc #ff004e #4b4949 #ffffff #000000
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  top: 0;
+  font-family: "lora", serif, arial, helvetica;
+  font-size: 14px;
+}
+.header {
+  background-color: #ffeeee;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 2px 3px #fdd1dc;
+  z-index: 2;
+}
+
+.header .container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 100;
+}
+.header .logo {
+  color: #ffeeee;
+  text-align: center;
+  padding: 0.5%;
+  flex-grow: 1;
+}
+
+.header .logo img {
+  width: 150px;
+  margin: 0 auto;
+}
+.header .menu {
+  text-align: center;
+  padding: 0.8%;
+  flex-grow: 8;
+}
+.menu .item > li {
+  display: inline-block;
+  padding: 0% 2%;
+  font-size: 18px;
+  list-style: none;
+}
+.item > li a {
+  color: #000000;
+  text-decoration: none;
+}
+.item > li a:hover {
+  color: #4b4949;
+  font-size: 19px;
+  text-shadow: #ffd1dc 2px 3px;
+}
+.header .buscador {
+  text-align: center;
+  flex-grow: 1;
+  list-style: none;
+}
+.buscarOculto {
+  padding: 0;
+  width: 0;
+  border: none;
+  outline: none;
+  transition: all 0.5s linear;
+}
+.buscarVisible {
+  width: auto;
+  margin-right: 10px;
+  border-radius: 8%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  transition: all 0.5s linear;
+}
+
+.main h1 {
+  width: 40%;
+  padding: 1%;
+  font-size: 55px;
+  font-weight: 600;
+  margin-top: 1%;
+  border-bottom: 1px solid #000000;
+  text-align: center;
+}
+.main > .container__p {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 0.1px;
+  overflow-y: scroll;
+  background-image: linear-gradient(50deg, #c3bebec0 10%, #ffd1dc9a),
+    url(../img/ivanavion.jpeg);
+}
+
+.main > .container_p {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 0.1px;
+  overflow-y: scroll;
+  background-image: linear-gradient(50deg, #c3bebec0 10%, #ffd1dc9a),
+    url(../img/ivanavion.jpeg);
+}
+.main h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main > .container_price {
+  background-image: linear-gradient(50deg, #c3bebec0 10%, #ffd1dc9a),
+    url(../img/ivanavion.jpeg);
+}
+.container_p .ofertas {
+  width: 85%;
+  font-size: 26px;
+  padding: 1.5%;
+  text-align: justify;
+}
+
+.container_p .container_button {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.container_button .button_lp {
+  padding: 20px;
+  background-color: #4b4949;
+  border: 1px solid #4b4949;
+  border-radius: 5%;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 1s ease 0.2s;
+}
+.container_button .button_lp:hover {
+  background-color: #ff003c9a;
+  border: 1px solid #ff003c9a;
+  border-radius: 5%;
+  color: black;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.containers {
+  padding: 2%;
+  margin-top: 2%;
+}
+
+.up {
+  padding: 10%;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  padding: 0.8%;
+  background-color: #ffd1dc9a;
+  border: 1px solid #ffd1dc9a;
+  color: #4b4949;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  float: right;
+}
+.SubTitle {
+  font-size: 35px;
+  color: #4b4949;
+  text-align: center;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  padding: 10px;
+  border-bottom: 1px solid #000000;
+}
+.container_history {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 0.1px;
+  overflow-y: scroll;
+  background-image: linear-gradient(50deg, #c3bebec0 10%, #ffd1dc9a),
+    url(../img/ivanavion.jpeg);
+}
+.container_history .text_history {
+  font-size: 20px;
+  text-align: justify;
+}
+.container_services {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 0.1px;
+  overflow-y: scroll;
+  background-image: linear-gradient(50deg, #c3bebec0 10%, #ffd1dc9a),
+    url(../img/ivanavion.jpeg);
+}
+.services > i {
+  font-size: 60px;
+}
+.services .subService {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  color: #000000;
+  font-size: 24px;
+}
+.services {
+  width: 45%;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+  padding: 12px;
+  background-color: #8585859a;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+.services:hover {
+  background-color: #4b4b4b9a;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px #4b4949;
+}
+.services > p {
+  font-size: 20px;
+}
+.section h2 {
+  font-size: 24px;
+  transition: font-size 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.section h2:hover {
+  font-size: 30px;
+  color: #00ce6e;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.781);
+}
+.section {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 80px;
+  text-align: center;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-row img {
+  width: 30%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-row img:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.image-chaqueta {
+  display: flex;
+  justify-content: space-between;
+}
+.image-chaqueta img {
+  width: 30%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-chaqueta img:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.image-pantalones {
+  display: flex;
+  justify-content: space-between;
+}
+.image-pantalones img {
+  width: 30%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-pantalones img:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+li:hover {
+  background-color: #ffd1dc;
+  transition: all 0.3s ease;
+}
+
+.valor > i {
+  font-size: 60px;
+}
+.form {
+  width: 40%;
+  height: auto;
+  display: inline-block;
+  padding: 20px 5px;
+  text-align: center;
+  border: 1px solid #4b4949;
+}
+.form * {
+  display: inline-block;
+  width: 85%;
+  margin: 1% 0;
+  font-size: 20px;
+}
+.form > input {
+  padding: 10px 2px;
+  border: none;
+  border-bottom: 1px solid #720000;
+  outline: none;
+}
+.form > label {
+  text-align: center;
+  padding: 5px;
+}
+.labelPolitica {
+  width: 50%;
+  display: inline-block;
+}
+/*
+CheckBox*/
+input[type="checkbox"] {
+  visibility: hidden;
+}
+.check {
+  display: inline-block;
+  position: relative;
+  margin: 3%;
+  width: 24%;
+  height: 40px;
+  background: #ff004e;
+  border-radius: 10px;
+}
+.check label {
+  display: block;
+  width: 40%;
+  height: 70%;
+  border-radius: 17px;
+  box-shadow: 0px 1px 1px 0px #00000059;
+  background: #fcfff4;
+  background: linear-gradient(to top, #fcfff4 3%, #d9d8d2 40%, #b3bead 100%);
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  transition: all 1.5s ease;
+}
+.check input[type="checkbox"]:checked + label {
+  left: auto;
+  right: 8px;
+}
+.check:after {
+  content: "NO";
+  font: 14px/30px Arial, sans-serif;
+  color: #ffd1dc;
+  margin: 2%;
+  position: absolute;
+  right: 10px;
+  z-index: 0;
+  font-weight: bold;
+}
+.check:before {
+  content: "SI";
+  font: 14px/30px Arial, sans-serif;
+  margin: 2%;
+  color: #ffd1dc;
+  position: absolute;
+  left: 10px;
+  z-index: 0;
+  font-weight: bold;
+}
+.button_send,
+.button_clear {
+  display: inline-block;
+  width: 30%;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  padding: 4%;
+  background-color: #fdd1dc;
+  border: 1px solid #c298a2;
+  border-radius: 5%;
+  color: #4b4949;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+}
+.is-valid {
+  background-color: #00ff2a !important;
+  border-bottom: 1px solid #ff004e !important;
+}
+.is-invalid {
+  border-bottom: 5px solid #f81818 !important;
+}
+.container_contact {
+  font-size: 20px;
+  margin-bottom: 2%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 0.1px;
+  overflow-y: scroll;
+  background-image: linear-gradient(50deg, #c3bebec0 10%, #ffd1dc9a),
+    url(../img/ivanavion.jpeg);
+}
+.elements_contact {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  position: relative;
+}
+.form {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.button_send {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button_clear {
+  background-color: #ccc;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.checkPolitica {
+  margin-right: 5px;
+}
+
+/* Estilos del mapa */
+iframe {
+  width: 50%;
+  height: 450px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container_acercade {
+  font-size: 20px;
+  margin-bottom: 2%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 0.1px;
+  overflow-y: scroll;
+  background-image: linear-gradient(50deg, #c3bebec0 10%, #ffd1dc9a),
+    url(../img/ivanavion.jpeg);
+}
+.footer {
+  width: 100%;
+  background-color: #4b4949;
+  color: white;
+  margin-top: 1%;
+  overflow-x: auto;
+}
+.footer {
+  .container_footer {
+    padding-top: 2%;
+    text-align: center;
+    margin: 2%;
+  }
+}
+.container_footer {
+  h2 {
+    color: white;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  .li {
+    list-style: none;
+    text-align: center;
+  }
+}
+.social_net {
+  li {
+    padding: 1.5%;
+    display: inline-block;
+  }
+  .nets {
+    width: 50px;
+  }
+}
+/*Medias querys */
+@media (min-width: 1024px) and (max-width: 1280px) {
+}
